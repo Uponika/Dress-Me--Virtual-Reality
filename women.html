@@ -1,0 +1,300 @@
+<html lang="en">
+<head>
+  <title>Online Shopping Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+ /* Dropdown Button */
+.dropbtn {
+    background-color: #222222;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+header
+{
+    
+   background-color:#2874F1;height:110px; 
+}
+
+.topbar_flipkart 
+{
+    width:100%;
+    display:block;
+    text-align:right;
+    
+}
+.topbar_flipkart ul
+{
+    margin-right:170px;
+    
+}
+.topbar_flipkart li
+{
+    list-style-type:none;
+    display:inline;
+   
+}
+.topbar_flipkart a
+{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size:11px;
+    margin:0px 7px;
+}
+.logoba_flipkart
+{
+    margin-left:180px;
+}
+.logoba_flipkart img
+{
+    height:35px;
+    width:140px;
+    padding:0px;   
+}
+.searc_bar_flipkart
+{
+    width:50%;
+    padding:0px;
+    border-radius:2px;
+    border:solid 1px lightgray;
+    font-size:11px;
+    margin-top:3px;
+    margin-right:0px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    height:35px;
+}
+.button_searc_flipkart
+{
+    width:60px;
+    padding:0px;
+    border:solid 1px lightgray;
+    background-color:#ffe11b;
+    margin-left:0px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    height:35px;
+    
+}
+.drop_link:hover
+{
+    background-color:#fff;
+    padding:3px;
+    margin:0px 1px;
+    color:#404040;width:100%;
+}
+.flipkart_drop
+{
+    border-radius:0px;
+    
+    padding:0px;
+    text-align:left;
+}
+.cart_button_flipkart
+{
+    color:#f2f2f2;
+    background-color:;
+    padding:6px;
+    background-color: #2469d9;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
+    text-align: center;
+    margin-top:3px;
+    border:solid 1px #2469d9;
+    margin-left:20px;
+}
+.item-number
+{
+    padding:2px 4px;
+    background-color:#1d55af;
+    
+}
+.head
+{ 
+    color:#fff;
+}
+.pic
+{
+    height:15px;
+    width:15px;   
+}
+ .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+ body {background-color: white;}  
+.mob 
+{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}  
+h2.head2 {
+  text-align: center;
+}
+#design-cast {
+    position: relative;
+    overflow: hidden;
+}
+
+.member {
+    float: left;
+    width: 30%;
+    margin: 1% 1% 45px 1%;
+}
+
+.name {
+    position: absolute;
+    bottom: 0px;
+}
+
+.member img {
+    width: 120%;
+    display: block;
+    border-radius:80%
+}
+body {background-color: yellow;}  
+</style>
+</head>
+<body style="margin:0px;padding:0px">
+<header>
+<div class="topbar_flipkart" style="padding: 0px;">
+<ul>
+<li><a href="#">Sell on scanfcode</a></li>
+<li><a href="#">Adverstise</a></li>
+<li><a href="#">Gift card</a></li>
+<li><a href="#">Download app</a></li>
+<li><a href="#">24*7 Customer care</a></li>
+<li><a href="#">Track order</a></li>
+<li><a href="#"><i class="fa fa-bell"></i></a></li>
+<li class="dropdown">
+ <a href="#"  data-toggle="dropdown" class="drop_link">Hi user
+  <span class="caret"></span></a>
+  <ul class="dropdown-menu flipkart_drop">
+                        <li class="profile-li"><a class="profile-links" href="https://github.com/chawlaaditya8/snippets"> My Order</a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://github.com/chawlaaditya8/snippets">Gift Card</a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://github.com/chawlaaditya8/snippets">Change Password </a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://github.com/chawlaaditya8/snippets">logout</a></li>
+  </ul>
+ 
+</li>
+</ul>
+</div>
+<div class="logoba_flipkart" style="padding: 0px;">
+  <span><font size = "+2.5"><b><i><h8 style="font-style:riona sans;" class="head">Flipkart</h8></i></b></font></span>
+  <span><img src="C:\Users\Uponika\Desktop\fp_photos\logo.png" style="width:5%" alt="Flipkart" class="pic"></span>
+  <span><input type="text" class="searc_bar_flipkart" placeholder="Search for Products, Brands and More"/><buttlon type="sujbmit" class="button_seaurc_flipkart"><i class="fa fa-search"></i></button></span>
+ 
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="C:/Users/Uponika/Desktop/dress/home.html">Home</a></li>
+         <li class="active"><a href="C:/Users/Uponika/Desktop/dress/women.html">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Baby and Kids</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<body>
+ <div id="design-cast" class="container">
+     
+  
+    <div class="member" style="float:right;">
+<br></br>
+        <a href = "westpage1.html"><img src="C:\Users\Uponika\Desktop\fp_photos\west1.jpg"  class="img-responsive img-thumbnail" border="2" alt="Responsive image" />
+        <div class="name">
+            <br /></div>
+    </div>
+    <div class="member">
+	<br></br>
+        <a href = "sareepage1.html"><img src="C:\Users\Uponika\Desktop\fp_photos\saree3.jpg"  class="img-responsive img-thumbnail" border="2" alt="Responsive image" />
+        
+    </div>
+    <div class="member">
+	<br></br>
+        <a href = "salwarpage1.html"><img src="C:\Users\Uponika\Desktop\fp_photos\saree1.jpg" class="img-responsive img-thumbnail" border="2" alt="Responsive image" />
+        
+    </div>
+</div>
+
+</body>
+</head>
